@@ -4,8 +4,8 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Header from './Header';
 import ProjectsList from './ProjectsList';
 import NewProject from './NewProject';
-import SingleProject from './SingleProject'
-
+import SingleProject from './SingleProject';
+import List from './List';
 export default class App extends Component {
     render() {
         return (
@@ -13,10 +13,10 @@ export default class App extends Component {
                 <div className="container">
                     <Header />
                     <Switch>
+                        <Route exact path="/list" component= { List } />
                         <Route exact path="/" component={ ProjectsList } />
                         <Route exact path="/create" component= {NewProject} />
                         <Route exact path="/:id" component={ SingleProject } />
-
                     </Switch>
                 </div>
             </BrowserRouter>

@@ -22,4 +22,6 @@ Route::post('projects', 'Api\ProjectController@store');
 Route::get('projects/{id}','Api\ProjectController@show');
 Route::put('projects/{project}', 'Api\ProjectController@markAsCompleted');
 Route::post('tasks', 'Api\TaskController@store');
-    Route::put('tasks/{task}', 'Api\TaskController@markAsCompleted');
+Route::put('tasks/{task}', 'Api\TaskController@markAsCompleted');
+
+Route::get('users','Api\UserController@index');

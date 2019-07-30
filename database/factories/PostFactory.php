@@ -26,6 +26,7 @@ $factory->define(Post::class, function (Faker $faker) {
         'description' =>$faker->realText($maxNbChars = 200),
         'status' => $faker->numberBetween($min = 0, $max = 1),
         'user_id' =>   $faker->randomElement($user),
-        'category_id' => $faker->rarandomElement($category)
+        'category_id' => $faker->randomElement($category),
+        'images' => $faker->image('public/storage/images',640,480, null, false)
     ];
 });
