@@ -1,0 +1,34 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /var/www/laravel/LaravelReactJsSample
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse master
+> git rev-parse --symbolic-full-name master@{u}
+> git rev-list --left-right master...refs/remotes/origin/master
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :resources/js/components/category/Listting.js
+> git show :package.json
+> git check-ignore -z --stdin
+> git show :resources/js/app.js
+> git show :resources/js/components/Index.js
+> git show :resources/js/components/Home.js
+> git show :resources/js/components/Header.js
+> git show :resources/js/components/Footer.js
+> git show :resources/js/components/About.js
+> git show :resources/js/components/category/SuccessAlert.js
+> git show :resources/js/components/category/Listting.js
+> git show :resources/js/components/category/Index.js
+> git show :resources/js/components/category/ErrorAlert.js
+> git show :resources/js/components/category/Edit.js
+> git show :resources/js/components/category/Add.js
+> git show :resources/js/components/Index.js
+> git show :resources/js/components/category/Listting.js
+> git show :package.json

@@ -1,0 +1,112 @@
+Looking for git in: git
+Using git 2.17.1 from git
+> git rev-parse --show-toplevel
+> git config --get commit.template
+Open repository: /var/www/laravel/laravel-reactjs-test
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse develop
+> git rev-parse --symbolic-full-name develop@{u}
+> git rev-list --left-right develop...refs/remotes/origin/develop
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git check-ignore -z --stdin
+> git show :resources/js/components/App.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/js/components/List.js
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git status -z -u
+> git symbolic-ref --short HEAD
+> git rev-parse user
+> git rev-parse --symbolic-full-name user@{u}
+fatal: no upstream configured for branch 'user'
+> git for-each-ref --format %(refname) %(objectname) --sort -committerdate
+> git remote --verbose
+> git show :resources/js/components/ProjectsList.js
+> git show :resources/js/components/List.js

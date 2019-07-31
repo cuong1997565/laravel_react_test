@@ -26,6 +26,7 @@
     },
     "dependencies": {
         "react-router-dom": "^5.0.1",
-        "webpack": "^4.38.0"
+        "webpack": "^4.38.0",
+        "react-js-pagination": "^3.0.2"
     }
 }

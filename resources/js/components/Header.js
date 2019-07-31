@@ -6,10 +6,13 @@ class Header extends Component {
             <nav className="navbar navbar-expand-sm bg-primary navbar-dark">
                 <ul className="navbar-nav">
                     <li className="nav-item active">
-                        <Link className="nav-link" to="/">Active</Link>
+                        <Link className="nav-link" to="/">Project</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/list">List User</Link>
+                    </li>
+                    <li className="nav-item">
+                        <Link className="nav-link" to="/list-post" >List Post</Link>
                     </li>
 
                 </ul>

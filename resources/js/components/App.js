@@ -5,7 +5,10 @@ import Header from './Header';
 import ProjectsList from './ProjectsList';
 import NewProject from './NewProject';
 import SingleProject from './SingleProject';
-import List from './List';
+import ListUser from './User/List';
+import CreateUser from './User/Create';
+import EditUser from './User/Edit';
+import ListPost from './Post/List';
 export default class App extends Component {
     render() {
         return (
@@ -13,7 +16,10 @@ export default class App extends Component {
                 <div className="container">
                     <Header />
                     <Switch>
-                        <Route exact path="/list" component= { List } />
+                        <Route exact path="/list" component= { ListUser } />
+                        <Route exact path="/create-user" component = { CreateUser } />
+                        <Route exact path="/edit-user/:id" component = { EditUser } />
+                        <Route exact path="/list-post" component = { ListPost } />
                         <Route exact path="/" component={ ProjectsList } />
                         <Route exact path="/create" component= {NewProject} />
                         <Route exact path="/:id" component={ SingleProject } />

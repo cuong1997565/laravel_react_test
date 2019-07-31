@@ -25,3 +25,9 @@ Route::post('tasks', 'Api\TaskController@store');
 Route::put('tasks/{task}', 'Api\TaskController@markAsCompleted');
 
 Route::get('users','Api\UserController@index');
+Route::post('users','Api\UserController@store');
+Route::get('users/{id}','Api\UserController@edit');
+Route::put('users/{id}','Api\UserController@update');
+Route::delete('users/{id}', 'Api\UserController@destroy');
+
+Route::get('posts','Api\PostController@index');
