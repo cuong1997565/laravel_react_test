@@ -13,6 +13,7 @@ class List extends Component {
             totalItemsCount: 1,
             pageRangeDisplayed: 5
         }
+        this.handlePageChange = this.handlePageChange.bind(this);
     }
     handlePageChange(pageNumber) {
         axios.get('/api/posts?page='+pageNumber).then((response) => {
@@ -62,7 +63,7 @@ class List extends Component {
                         <div className="card">
                             <div className="card-header">All Post</div>
                             <div className="card-body">
-                                <Link className='btn btn-primary btn-sm mb-3' to='/create'>
+                                <Link className='btn btn-primary btn-sm mb-3' to='/create-post'>
                                     Create new posts
                                 </Link>
                                 <table className="table table-hover">

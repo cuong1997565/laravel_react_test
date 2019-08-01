@@ -6296,3 +6296,4 @@ resources/js/components/Post/List.js: editor.action.trimTrailingWhitespace
 laravel-reactjs-test/resources/js/components/Post/List.js: {"insertSpaces":true,"tabSize":4}
 laravel-reactjs-test/resources/js/components/Post/List.js: {"insertSpaces":true,"tabSize":4}
 laravel-reactjs-test/app/Http/Controllers/Api/PostController.php: {"insertSpaces":true,"tabSize":4}
+laravel-reactjs-test/app/Http/Controllers/Api/PostController.php: {"insertSpaces":true,"tabSize":4}

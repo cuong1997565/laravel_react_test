@@ -4466,3 +4466,4 @@ fatal: no upstream configured for branch 'user'
 > git remote --verbose
 > git show :app/Http/Controllers/Api/PostController.php
 > git ls-files --stage -- app/Http/Controllers/Api/
+> git show :app/Http/Controllers/Api/PostController.php

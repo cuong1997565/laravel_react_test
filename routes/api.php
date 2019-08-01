@@ -25,9 +25,13 @@ Route::post('tasks', 'Api\TaskController@store');
 Route::put('tasks/{task}', 'Api\TaskController@markAsCompleted');
 
 Route::get('users','Api\UserController@index');
+Route::get('users/all','Api\UserController@indexAll');
 Route::post('users','Api\UserController@store');
 Route::get('users/{id}','Api\UserController@edit');
 Route::put('users/{id}','Api\UserController@update');
 Route::delete('users/{id}', 'Api\UserController@destroy');
 
+Route::get('cagetory/all','Api\CategoryController@indexAll');
+
 Route::get('posts','Api\PostController@index');
+Route::post('posts','Api\PostController@store');

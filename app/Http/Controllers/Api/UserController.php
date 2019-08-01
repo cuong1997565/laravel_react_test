@@ -45,6 +45,11 @@ class UserController extends Controller
         }
     }
 
+    public function indexAll() {
+        $user = User::all('id','name');
+        return response()->json(['success','list danh sach user','user' => $user],200);
+    }
+
     /**
      * Show the form for creating a new resource.
      *

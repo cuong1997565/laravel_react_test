@@ -4,28 +4,9 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-use App\Post;
-use Validator;
-use Illuminate\Support\Facades\Storage;
-
-class PostController extends Controller
+use App\Category;
+class CategoryController extends Controller
 {
-    protected  $validationRules = [
-        'name' => 'required',
-        'image' => 'required',
-        'description' => 'required',
-        'user_id' => 'required',
-        'category_id' => 'required'
-    ];
-
-    protected $validationMessages = [
-        'name.required' => 'Name khong duoc de trong',
-        'image.required' => 'Image khong duoc de trong',
-        'description.required' => "Description khong duoc de trong",
-        'user_id.required' => "User khong duoc de trong",
-        'category_id' => "Category khong duoc de trong"
-    ];
-
     /**
      * Display a listing of the resource.
      *
@@ -33,9 +14,12 @@ class PostController extends Controller
      */
     public function index()
     {
-        $post = Post::with(['category','user'])->paginate(10);
+        //
+    }
 
-        return response()->json(['success' => 'List danh sach thành công','post' => $post], 200);
+    public function indexAll() {
+        $category = Category::all('id','name');
+        return response()->json(['success','list danh sach category','category' => $category],200);
     }
 
     /**
@@ -56,18 +40,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-        $validator = Validator::make($request->all(),$this->validationRules, $this->validationMessages);
-        if ($validator->fails()) {
-            return response()->json(['error' => $validator->errors()], 422);
-        }else {
-            if($request->get('image')){
-                $image = $request->get('image');
-                $name = time().'.' . explode('/', explode(':', substr($image, 0, strpos($image, ';')))[1])[1];
-                $destinationPath = public_path('/storage/images') . '/'.$name;
-                file_put_contents($destinationPath, file_get_contents($image));
-            }
-        }
-
+        //
     }
 
     /**

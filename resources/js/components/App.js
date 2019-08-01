@@ -9,6 +9,7 @@ import ListUser from './User/List';
 import CreateUser from './User/Create';
 import EditUser from './User/Edit';
 import ListPost from './Post/List';
+import CreatePost from './Post/Create';
 export default class App extends Component {
     render() {
         return (
@@ -20,6 +21,7 @@ export default class App extends Component {
                         <Route exact path="/create-user" component = { CreateUser } />
                         <Route exact path="/edit-user/:id" component = { EditUser } />
                         <Route exact path="/list-post" component = { ListPost } />
+                        <Route exact path="/create-post" component = { CreatePost } />
                         <Route exact path="/" component={ ProjectsList } />
                         <Route exact path="/create" component= {NewProject} />
                         <Route exact path="/:id" component={ SingleProject } />
