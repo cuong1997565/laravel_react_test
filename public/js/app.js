@@ -67576,6 +67576,7 @@ function (_Component) {
       var _this5 = this;
 
       event.preventDefault();
+      var history = this.props.history;
       var data = {
         name: this.state.name,
         image: this.state.image,
@@ -67586,6 +67587,7 @@ function (_Component) {
       };
       axios__WEBPACK_IMPORTED_MODULE_4___default.a.post('/api/posts', data).then(function (response) {
         console.log(response);
+        history.push('/list-post');
       })["catch"](function (error) {
         _this5.setState({
           errors: error.response.data.error
@@ -68802,8 +68804,8 @@ if(false) {}
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /var/www/laravel/laravel-reactjs-test/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /var/www/laravel/laravel-reactjs-test/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /var/www/laravel/laravel_react_test/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /var/www/laravel/laravel_react_test/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

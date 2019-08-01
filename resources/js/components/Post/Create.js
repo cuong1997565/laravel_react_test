@@ -102,6 +102,7 @@ class Create extends Component {
 
     handleSubmit(event) {
         event.preventDefault();
+        var { history } = this.props;
         const data = {
             name: this.state.name,
             image: this.state.image,
@@ -112,6 +113,7 @@ class Create extends Component {
         }
         axios.post('/api/posts', data).then((response) =>{
             console.log(response);
+            history.push('/list-post');
         }).catch((error) => {
            this.setState({
             errors: error.response.data.error

@@ -33,8 +33,7 @@ class PostController extends Controller
      */
     public function index()
     {
-        $post = Post::with(['category','user'])->paginate(10);
-
+        $post = Post::with(['category','user'])->orderBy('id','desc')->paginate(10);
         return response()->json(['success' => 'List danh sach thành công','post' => $post], 200);
     }
 
@@ -65,6 +64,15 @@ class PostController extends Controller
                 $name = time().'.' . explode('/', explode(':', substr($image, 0, strpos($image, ';')))[1])[1];
                 $destinationPath = public_path('/storage/images') . '/'.$name;
                 file_put_contents($destinationPath, file_get_contents($image));
+                $post = new Post;
+                $post->name = $request->input('name');
+                $post->description = $request->input('description');
+                $post->images = $name;
+                $post->status = $request->input('status') === true ? 1 : 0;
+                $post->category_id = $request->input('category_id');
+                $post->user_id = $request->input('user_id');
+                $post->save();
+                return response()->json(['success' => 'Them danh sach thành công','post' => $post], 200);
             }
         }
 
