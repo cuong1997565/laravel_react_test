@@ -35,3 +35,6 @@ Route::get('cagetory/all','Api\CategoryController@indexAll');
 
 Route::get('posts','Api\PostController@index');
 Route::post('posts','Api\PostController@store');
+Route::get('posts/{id}', 'Api\PostController@edit');
+Route::put('posts/{id}', 'Api\PostController@update');
+Route::delete('posts/{id}','Api\PostController@destroy');

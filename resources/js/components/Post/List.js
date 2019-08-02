@@ -14,6 +14,7 @@ class List extends Component {
             pageRangeDisplayed: 5
         }
         this.handlePageChange = this.handlePageChange.bind(this);
+        this.onDeletePost = this.onDeletePost.bind(this);
     }
     handlePageChange(pageNumber) {
         axios.get('/api/posts?page='+pageNumber).then((response) => {
@@ -40,6 +41,21 @@ class List extends Component {
             console.log(error);
         })
     }
+
+    onDeletePost(id) {
+        if(window.confirm("Ban co chac xoa khong ??")){
+            axios.delete(`/api/posts/${id}`).then((response) => {
+                this.setState(data =>({
+                    posts : data.posts.filter(post => {
+                        return post.id != id
+                    })
+                }))
+            }).catch((error) => {
+                console.log(error);
+            })
+        }
+    }
+
     render() {
         const { posts } = this.state;
         var elmPost = posts.map((post, index) => {
@@ -51,7 +67,9 @@ class List extends Component {
                     <td> { post.category.name } </td>
                     <td> { post.user.name } </td>
                     <td>
-                        <Link className="btn btn-primary" to={`/edit-post/${post.id}`}> Edit </Link>
+                        <Link className="btn btn-primary" to={`/edit-post/${post.id}`}  style={{ marginRight: 10 }}> Edit </Link>
+                        <button className="btn btn-danger" onClick={ () => { this.onDeletePost(post.id)} }> Delete  </button>
+
                     </td>
                 </tr>
             );
